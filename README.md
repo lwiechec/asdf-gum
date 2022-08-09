@@ -57,5 +57,5 @@ This repository is adapted from [adsf-babashka](https://github.com/fredZen/asdf-
 
 # License
 
-Distributed under the [Eclipse Public License](LICENSE), the same as Babashka.
+Distributed under the [Eclipse Public License](LICENSE), the same as `asdf-babashka`.
 © [Frederic Merizen](https://github.com/fredZen/)
