@@ -37,7 +37,6 @@ download_release() {
 
   case "$(uname -s)" in
     Linux*) platform=linux ;;
-    Darwin*) platform=macos ;;
   esac
 
   case "$(uname -m)" in
