@@ -1,6 +1,6 @@
 <div align="center">
 
-# asdf-gum [![Build](https://github.com/lwiechec/asdf-gum/workflows/Build/badge.svg)](https://github.com/lwiechec/asdf-gum/actions/workflows/build.yml) [![Lint](https://github.com/lwiechec/asdf-gum/workflows/Lint/badge.svg)](https://github.com/lwiechec/asdf-gum/actions/workflows/lint.yml)
+# asdf-gum [![Build](https://github.com/lwiechec/asdf-gum/actions/workflows/build.yml/badge.svg)](https://github.com/lwiechec/asdf-gum/actions/workflows/build.yml) [![Lint](https://github.com/lwiechec/asdf-gum/actions/workflows/lint.yml/badge.svg)](https://github.com/lwiechec/asdf-gum/actions/workflows/lint.yml)
 
 [gum](https://github.com/charmbracelet/gum) plugin for the [asdf version manager](https://asdf-vm.com).
 
