@@ -35,6 +35,8 @@ download_release() {
   local version="$1"
   local filename="$2"
 
+  platform=`uname -s`
+
   case "$(uname -s)" in
     Linux*) platform=linux ;;
   esac
@@ -44,7 +46,7 @@ download_release() {
     x86_64) arch=x86_64 ;;
   esac
 
-  echo >&2 "* Downloading gum release $version..."
+  echo >&2 "* Downloading gum release $version for $platform with architecture $arch..."
 
   local ext url
   for ext in tar.gz zip; do
