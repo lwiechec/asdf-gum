@@ -36,12 +36,16 @@ download_release() {
   local filename="$2"
 
   case "$(uname -s)" in
-    Linux*) platform=linux ;;
+      Linux*) platform=Linux ;;
+      Darwin*) platform=Darwin ;;
+      Freebsd*) platform=Freebsd ;;
+      Openbsd*) platform=Openbsd ;;
   esac
 
   case "$(uname -m)" in
     aarch64) arch=aarch64 ;;
     x86_64) arch=x86_64 ;;
+    aarch64) arch=arm64 ;;
   esac
 
   echo >&2 "* Downloading gum release $version..."
