@@ -44,7 +44,7 @@ download_release() {
 
   case "$(uname -m)" in
     x86_64) arch=x86_64 ;;
-    aarch64) arch=arm64 ;;
+    aarch64|arm64) arch=arm64 ;;
   esac
 
   echo >&2 "* Downloading gum release $version..."
