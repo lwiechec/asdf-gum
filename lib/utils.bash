@@ -79,6 +79,10 @@ install_version() {
 
     rm "$release_file.$ext"
 
+    if ls ${install_path}/bin/gum_${version}* > /dev/null 2>&1; then
+      mv `ls -d ${install_path}/bin/gum_${version}*`/* ${install_path}/bin/
+    fi
+
     local tool_cmd
     tool_cmd="gum"
     test -x "$install_path/bin/$tool_cmd" || fail "Expected $install_path/bin/$tool_cmd to be executable."
