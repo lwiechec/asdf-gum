@@ -73,7 +73,7 @@ install_version() {
     local ext=$(download_release "$version" "$release_file")
 
     case "$ext" in
-      tar.gz) tar -xzf "$release_file.$ext" --directory "$install_path/bin" || fail "Could not extract $release_file.$ext" ;;
+      tar.gz) tar -xzf "$release_file.$ext" --directory "$install_path/bin" --strip-components=1 || fail "Could not extract $release_file.$ext" ;;
       zip) unzip "$release_file.$ext" -d "$install_path/bin" || fail "Could not extract $release_file.$ext" ;;
     esac
 
