@@ -29,13 +29,13 @@ gum:
 
 ```shell
 # Show all installable versions
-asdf list-all gum
+asdf list all gum
 
 # Install specific version
 asdf install gum latest
 
 # Set a version globally (on your ~/.tool-versions file)
-asdf global gum latest
+asdf set -u gum latest
 
 # Now gum commands are available
 gum --version
